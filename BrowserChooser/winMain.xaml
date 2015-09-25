@@ -1,0 +1,23 @@
+﻿<Window x:Class="BrowserChooser.winMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BrowserChooser"
+    Title="Browser Chooser" Height="240" Width="444" ResizeMode="NoResize" Background="AliceBlue" Grid.IsSharedSizeScope="False" SizeToContent="WidthAndHeight" WindowStyle="ToolWindow" Loaded="Window_Loaded">
+    <Window.Resources>       
+        <DataTemplate DataType="{x:Type local:Browser}">
+            <TextBlock>
+                <CheckBox IsChecked="{Binding Path=Checked}" Checked="lstBrowsers_Check" Unchecked="lstBrowsers_Check" />
+                <TextBlock Text="{Binding Path=DisplayName}" />
+            </TextBlock>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid Height="210" Width="420">
+		<TextBox Height="23" Margin="52,12,12,0" Name="txtUrl" VerticalAlignment="Top" HorizontalContentAlignment="Left" />
+		<Label Height="28" HorizontalAlignment="Left" Name="lblUrl" VerticalAlignment="Top" Width="34" Margin="12,12,0,0">URL</Label>
+        <ListBox Margin="12,46,174,8" Name="lstBrowsers" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="252,0,0,8" Name="btnCancel" VerticalAlignment="Bottom" Width="75" Click="btnCancel_Click">Cancel</Button>
+		<Button Height="23" HorizontalAlignment="Right" Margin="0,0,12,8" Name="btnOpen" VerticalAlignment="Bottom" Width="75" Click="btnOpen_Click">Open</Button>
+		<Button HorizontalAlignment="Right" Margin="0,63,31,0" Name="btnSettings" Width="75" Click="btnSettings_Click" Height="23" VerticalAlignment="Top">Settings</Button>
+        <CheckBox Height="16" HorizontalAlignment="Right" Margin="0,41,12,0" Name="chkRemember" VerticalAlignment="Top" Width="94">Remember</CheckBox>
+    </Grid>
+</Window>

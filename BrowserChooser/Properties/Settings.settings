@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BrowserChooser.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CheckedBrowsers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FIREFOX.EXE</Value>
+    </Setting>
+    <Setting Name="hasSetDefault" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StoredActions" Type="BrowserChooser.RememberedUrlActions" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpgradeSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="URLHandlers" Type="BrowserChooser.Protocols" Scope="User">
+      <Value Profile="(Default)">
+     &lt;Protocols xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+      &lt;Items&gt;
+       &lt;Protocol&gt;
+        &lt;Proto&gt;http&lt;/Proto&gt;
+        &lt;Desc&gt;URL:HyperText Transfer Protocol&lt;/Desc&gt;
+       &lt;/Protocol&gt;
+       &lt;Protocol&gt;
+        &lt;Proto&gt;https&lt;/Proto&gt;
+        &lt;Desc&gt;URL:HyperText Transfer Protocol with Privacy&lt;/Desc&gt;
+       &lt;/Protocol&gt;
+      &lt;/Items&gt;
+     &lt;/Protocols&gt;
+    </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
